@@ -15,6 +15,7 @@ import Pie from './scenes/pie';
 import FAQ from './scenes/faq';
 import Geography from './scenes/geography';
 import Calendar from './scenes/calendar';
+import './styles.css';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -24,7 +25,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <Sidebar />
+          <Sidebar className="sidebar" />
           <main className="content">
             <Topbar />
             <Routes>
